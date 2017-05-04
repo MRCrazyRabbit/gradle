@@ -17,11 +17,11 @@
 package org.gradle.caching.local.internal
 
 import org.gradle.integtests.fixtures.AbstractIntegrationSpec
-import org.gradle.integtests.fixtures.LocalBuildCacheFixture
+import org.gradle.integtests.fixtures.DirectoryBuildCacheFixture
 
 import java.util.concurrent.TimeUnit
 
-class DirectoryBuildCacheCleanupIntegrationTest extends AbstractIntegrationSpec implements LocalBuildCacheFixture {
+class DirectoryBuildCacheCleanupIntegrationTest extends AbstractIntegrationSpec implements DirectoryBuildCacheFixture {
     def setup() {
         settingsFile << """
             buildCache {
